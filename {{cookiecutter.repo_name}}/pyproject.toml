@@ -1,0 +1,22 @@
+[project]
+name = "{{ cookiecutter.project_name }}"
+version = "0.1.0"
+description = "{{ cookiecutter.project_description }}"
+license = "{{ cookiecutter.license|upper }}"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["logging>=0.4.9.6"]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "pre-commit>=4.1.0",
+    "pytest>=8.3.5",
+    "ruff>=0.10.0",
+    "taskipy>=1.14.1",
+    "wemake-python-styleguide>=1.0.0",
+]
+
+[tool.taskipy.tasks]
+lint = "ruff check . && ruff format && flake8 ."
+test = "uv venv && uv run pytest"
