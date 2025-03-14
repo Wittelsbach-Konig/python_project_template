@@ -1,6 +1,7 @@
 {
     "project_name": "My Python Project",
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "init_git": ["yes", "no"],
     "author": "Your Name",
 
     "license": "MIT",
