@@ -1,6 +1,6 @@
 import subprocess
 
-from cookiecutter.utils import read_user_variable
+from cookiecutter.prompt import read_user_variable
 
 
 def init_git():
