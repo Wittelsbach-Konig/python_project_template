@@ -5,7 +5,7 @@ from cookiecutter.prompt import read_user_variable
 
 def init_git():
     """Инициализирует Git после генерации проекта"""
-    if read_user_variable("init_git") == "yes":
+    if read_user_variable("init_git", "yes") == "yes":
         subprocess.run(["git", "init"])
         subprocess.run(["git", "add", "."])
         subprocess.run(["git", "commit", "-m", "Initial commit"])
