@@ -1,3 +1,7 @@
-# python_project_template
+# My template for python projects
 
-My template for python project
+Use with `cookiecutter`:
+
+```bash
+cookiecutter gh:wittelsbach-konig/python_project_template
+```
