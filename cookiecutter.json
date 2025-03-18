@@ -1,6 +1,5 @@
 {
     "project_name": "My Python Project",
-    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "author": "Your Name",
 
     "license": "MIT",

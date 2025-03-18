@@ -1,3 +1,3 @@
-# python_project_template
+# {{cookiecutter.project_name}}
 
-My template for python project
+{{ cookiecutter.project_description }}
