@@ -1,11 +1,10 @@
 {
     "project_name": "My Python Project",
+    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "author": "Your Name",
 
     "license": "MIT",
 
     "project_description": "A new Python project template",
-    "_copy_without_render": [
-        ".venv"
-    ]
+    "_copy_without_render": [".venv"]
 }
